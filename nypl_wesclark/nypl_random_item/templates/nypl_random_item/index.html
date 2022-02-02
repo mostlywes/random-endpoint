@@ -1,0 +1,12 @@
+<h1>What type of random image from the collection to explore?</h1>
+<form action="{% url 'random_item_app:random_item' %}" method="get">
+<fieldset>
+    <legend>Resource types in the collections</legend>
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    {% for type_of_resource in type_of_resource_options %}
+        <input type="radio" name="type_of_resource" id="type_of_resource{{ forloop.counter }}" value="{{ type_of_resource }}">
+        <label for="type_of_resource{{ forloop.counter }}">{{ type_of_resource }}</label><br>
+    {% endfor %}
+</fieldset>
+<input type="submit" value="Submit">
+</form>
