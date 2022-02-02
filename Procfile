@@ -1,1 +1,1 @@
-web: gunicorn nypl_wesclark.wsgi
+web: gunicorn nypl_wesclark.wsgi --log-file -
