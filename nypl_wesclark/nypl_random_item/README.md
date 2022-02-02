@@ -1,3 +1,6 @@
+# random-endpoint
+a random-generating endpoint using the API of a digital collection
+
 # Description
 
 Random is how you retrieve a random capture based on a provided resource type from the 500 most recently listed captures.
