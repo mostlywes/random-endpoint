@@ -1,1 +1,1 @@
-web: gunicorn djangoProject.wsgi
+web: gunicorn nypl_wesclark.wsgi
